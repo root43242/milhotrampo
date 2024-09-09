@@ -14,9 +14,11 @@ class AppLayout extends Component
      */
     public function render(): View
     {
-        
-        $points = UserPoints::findOrFail(auth()->user()->id);
+        $points = 0;
 
+        if(auth()->user()){
+            $points = UserPoints::findOrFail(auth()->user()->id);
+        }
 
         return view('layouts.app', compact('points'));
     }

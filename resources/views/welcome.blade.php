@@ -290,7 +290,6 @@ window.onload = function () {
     ativarMissoesCompletadas();
 }
 </script>
-
 </x-guest-layout>
 
 
