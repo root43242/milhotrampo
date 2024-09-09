@@ -9,6 +9,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\UserPoints; // Importa o modelo de UserPoints
+
 
 class User extends Authenticatable
 {
@@ -61,5 +63,30 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        // Escuta o evento de criação de um novo usuário
+        static::created(function ($user) {
+            // Verifica se o usuário foi criado com sucesso
+            if ($user) {
+                // Cria o saldo de pontos inicial na tabela UserPoints
+                UserPoints::create([
+                    'user_id' => $user->id,
+                    'points' => 1000, // Define os pontos iniciais, por exemplo, 1000 pontos
+                ]);
+            }
+        });
+    }
+
+    /**
+     * Relacionamento com a tabela UserPoints.
+     */
+    public function userPoints()
+    {
+        return $this->hasOne(UserPoints::class);
     }
 }
