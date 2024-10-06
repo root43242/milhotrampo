@@ -25,7 +25,7 @@
     <header class="bg-white relative w-full border-b border-gray-300 text-blue-600 p-4 flex justify-between items-center z-50">
         <div class="flex items-center space-x-2">
             <!-- Logo -->
-            <img src="/images/logo.png" alt="Logo" class="h-10">
+            <img src="/images/logo.png" alt="Logo" class="h-14">
         </div>
         <!-- Saldo -->
         <div class="text-right">
