@@ -10,7 +10,7 @@
                 <div class="absolute text-center uppercase p-2 inset-x-0 top-0 rounded-b-lg bg-yellow-500 text-white font-extrabold">Promoção Válida Apenas Hoje</div>
                 <img src="https://www.mundoconectado.com.br/wp-content/uploads/2023/09/iPhone-15-Pro-3-912x569.webp" alt="iPhone" class="mx-auto mb-4 rounded-lg">
                 <h2 class="text-xl font-semibold mb-2 text-gray-800">iPhone 15 Pro Max</h2>
-                <p class="blur-sm text-gray-600 mb-4 text-xl">4000 Pontos</p>
+                <p class="text-gray-600 mb-4 text-xl">4000 Pontos</p>
                 <button onclick="openModal()" class="text-2xl bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-200">
                     Resgatar
                 </button>
