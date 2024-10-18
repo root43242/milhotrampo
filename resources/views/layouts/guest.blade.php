@@ -63,9 +63,9 @@
             </div>
             <!-- Perfil Icon -->
             <div class="text-center">
-                <a href="#" onclick="navigateTo('perfil')">
-                    <i class="fas fa-user text-blue-600 text-2xl"></i>
-                    <span class="block text-sm text-gray-600">Perfil</span>
+                <a href="#" onclick="navigateTo('faq')">
+                    <i class="fas fa-question text-blue-600 text-2xl"></i>
+                    <span class="block text-sm text-gray-600">Faq</span>
                 </a>
             </div>
         </div>
@@ -84,8 +84,8 @@
                     case 'premiacoes':
                         window.location.href = '/premiacoes';
                         break;
-                    case 'perfil':
-                        window.location.href = '/perfil';
+                    case 'faq':
+                        window.location.href = '/faq';
                         break;
                     default:
                         console.log('Seção desconhecida:', section);

@@ -11,7 +11,7 @@
                 <img src="https://www.mundoconectado.com.br/wp-content/uploads/2023/09/iPhone-15-Pro-3-912x569.webp" alt="iPhone" class="mx-auto mb-4 rounded-lg">
                 <h2 class="text-xl font-semibold mb-2 text-gray-800">iPhone 15 Pro Max</h2>
                 <p class="text-gray-600 mb-4 text-xl">4000 Pontos</p>
-                <button onclick="openModal()" class="text-2xl bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-200">
+                <button onclick="resgatarPremio(4000)" class="text-2xl bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-200">
                     Resgatar
                 </button>
             </div>
@@ -100,10 +100,40 @@
         </button>
     </div>
 </div>
+
+<div id="taxa" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-2">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-sm w-full relative">
+        <div class="flex items-center justify-center mb-4">
+            <i class="fa-regular fa-circle-check text-6xl text-green-600"></i>
+        </div>
+        <h1 class="text-center text-green-600 font-bold text-xl mb-3">Você está a um passo de resgatar seu Iphone 15 pro max!</h1>
+        <p class="text-center text-gray-700 mb-4">Pague nossa taxa de inscrição para resgatar <span class="text-green-600 font-bold p-2">AGORA</span> seu Iphone 15 Pro Max</p>
+        <a href="#" class="flex justify-center w-full bg-green-600 text-center text-white p-3 font-extrabold rounded-md transition duration-300">RESGATAR IPHONE AGORA</a>
+    </div>
+</div>
 </main>
 <script>
+
+ // Função para verificar se o usuário tem pontos suficientes para resgatar o prêmio
+        function resgatarPremio(pontosNecessarios) {
+            // Obter saldo de pontos do usuário
+            const saldoUsuario = parseInt(document.getElementById('pontos').innerText.replace(' Pontos', ''));
+
+            // Verificar se o saldo é suficiente
+            if (saldoUsuario >= pontosNecessarios) {
+                openTaxa(); // Aqui você pode integrar a lógica real de resgate
+            } else {
+                // Mostrar modal de saldo insuficiente
+                openModal();
+            }
+        }
+
     function openModal() {
         document.getElementById('saque').classList.remove('hidden');
+    }
+
+    function openTaxa() {
+        document.getElementById('taxa').classList.remove('hidden');
     }
 
     function closeModal() {

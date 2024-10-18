@@ -2,7 +2,66 @@
 
 <div class="p-2">
 
-<div id="vid_66c68911904ce4000cf2ded5" style="position:relative;width:100%;padding: 56.25% 0 0;"> <img id="thumb_66c68911904ce4000cf2ded5" src="https://images.converteai.net/e5d08590-3ca9-4ac8-bfed-2d90d4cdaa5d/players/66c68911904ce4000cf2ded5/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"> <div id="backdrop_66c68911904ce4000cf2ded5" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div> </div> <script type="text/javascript" id="scr_66c68911904ce4000cf2ded5"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/e5d08590-3ca9-4ac8-bfed-2d90d4cdaa5d/players/66c68911904ce4000cf2ded5/player.js", s.async=!0,document.head.appendChild(s); </script> <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>            </div>    
+<div class="flex justify-center w-full">
+    <iframe id="panda-c5d695fc-d374-4469-bd1f-276864a58fa2" src="https://player-vz-dc82a23f-d0b.tv.pandavideo.com.br/embed/?v=c5d695fc-d374-4469-bd1f-276864a58fa2" style="border:none;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true width="720" height="360" fetchpriority="high"></iframe>
+</div>
+
+<div class="flex justify-center items-center p-4">
+    <span class="mr-2 text-xl text-gray-700">Ainda possuímos</span>
+    <span id="vaga-count" class="text-2xl font-bold text-red-600">50</span>
+    <span class="ml-2 text-xl text-gray-700">vagas restantes</span>
+</div>
+
+
+<div class="flex w-full justify-center p-4">
+        <!-- Botão escondido inicialmente -->
+        <a id="inscricao-btn" class="hidden bg-red-600 font-extrabold text-3xl p-4 rounded-lg text-white text-center animate-pulse" href="#">FAZER INSCRIÇÃO AGORA</a>
+    </div>
+
+    <script>
+        // Função para exibir o botão após 6 minutos (360000 milissegundos)
+        setTimeout(function() {
+            document.getElementById('inscricao-btn').classList.remove('hidden');
+        }, 240000); // 240000 ms = 4 minutos
+    </script>
+
+<style>
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+    }
+    
+    .animate-pulse {
+        animation: pulse 1.5s infinite;
+    }
+</style>
+
+
+<script>
+    // Definir número inicial de vagas
+    let vagas = 50;
+
+    // Função para diminuir o número de vagas
+    function diminuirVagas() {
+        if (vagas > 0) {
+            vagas -= 5;
+            document.getElementById('vaga-count').textContent = vagas;
+
+            // Caso as vagas acabem, exibe uma mensagem
+            if (vagas <= 5) {
+                document.getElementById('vaga-count').textContent = '1';
+            }
+        }
+    }
+
+    // Executar a função a cada 1 minuto (60.000 milissegundos)
+    setInterval(diminuirVagas, 60000);
+</script>
+
 
 
 </div>

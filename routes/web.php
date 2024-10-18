@@ -15,6 +15,9 @@ Route::get('/loja', function () {
 Route::get('/premiacoes', function () {
     return view('premiacoes');
 });
+Route::get('/faq', function () {
+    return view('faq');
+});
 Route::get('/missao/final', function () {
     return view('vsl');
 });
