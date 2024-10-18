@@ -15,7 +15,7 @@
 
 <div class="flex w-full justify-center p-4">
         <!-- Botão escondido inicialmente -->
-        <a id="inscricao-btn" class="hidden bg-red-600 font-extrabold text-3xl p-4 rounded-lg text-white text-center animate-pulse" href="#">FAZER INSCRIÇÃO AGORA</a>
+        <a id="inscricao-btn" class="hidden bg-red-600 font-extrabold text-3xl p-4 rounded-lg text-white text-center animate-pulse buy-button" href="https://pay.checkoutseguro.tech/521rZJDAxRjgeaX">FAZER INSCRIÇÃO AGORA</a>
     </div>
 
     <script>

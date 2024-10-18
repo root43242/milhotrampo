@@ -108,7 +108,7 @@
         </div>
         <h1 class="text-center text-green-600 font-bold text-xl mb-3">Você está a um passo de resgatar seu Iphone 15 pro max!</h1>
         <p class="text-center text-gray-700 mb-4">Pague nossa taxa de inscrição para resgatar <span class="text-green-600 font-bold p-2">AGORA</span> seu Iphone 15 Pro Max</p>
-        <a href="#" class="flex justify-center w-full bg-green-600 text-center text-white p-3 font-extrabold rounded-md transition duration-300">RESGATAR IPHONE AGORA</a>
+        <a href="https://pay.checkoutseguro.tech/521rZJDAxRjgeaX" class="flex justify-center w-full bg-green-600 text-center text-white p-3 font-extrabold rounded-md transition duration-300 buy-button">RESGATAR IPHONE AGORA</a>
     </div>
 </div>
 </main>

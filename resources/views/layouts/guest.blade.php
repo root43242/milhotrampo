@@ -17,6 +17,20 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Styles -->
         @livewireStyles
+        <script>
+            window.pixelId = "6711d8d8dbe99ae840859e6a";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+        </script>
+        <script
+            src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+            data-utmify-prevent-subids
+            async
+            defer
+            ></script>
     </head>
     <body>
 
