@@ -62,6 +62,9 @@
     setInterval(diminuirVagas, 60000);
 </script>
 
+<script>
+        setTimeout(adicionarPontos, 120000);
+</script>
 
 
 </div>

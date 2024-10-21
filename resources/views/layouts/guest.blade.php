@@ -7,7 +7,14 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
+        <script>
+    // Função para adicionar 1000 pontos
+    function adicionarPontos() {
+        totalPontos += 1000; // Adiciona 1000 pontos
+        document.getElementById('pontos').innerText = totalPontos + ' Pontos'; // Atualiza a exibição dos pontos
+        setCookie("pontos", totalPontos, 30); // Salva os pontos nos cookies por 30 dias
+    }
+</script>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -107,8 +114,8 @@
             }
         </script>
 
-<script>
-    // Função para definir um cookie
+            <script>
+                 // Função para definir um cookie
     function setCookie(name, value, days) {
         const d = new Date();
         d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -132,14 +139,7 @@
 
     // Exibe o valor inicial de pontos ao carregar a página
     document.getElementById('pontos').innerText = totalPontos + ' Pontos';
-
-    // Função para adicionar 1000 pontos
-    function adicionarPontos() {
-        totalPontos += 1000; // Adiciona 1000 pontos
-        document.getElementById('pontos').innerText = totalPontos + ' Pontos'; // Atualiza a exibição dos pontos
-        setCookie("pontos", totalPontos, 30); // Salva os pontos nos cookies por 30 dias
-    }
-</script>
+            </script>
 
         @livewireScripts
     </body>
