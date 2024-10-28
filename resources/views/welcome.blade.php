@@ -289,7 +289,7 @@
             <i class="fa-regular fa-circle-check text-6xl text-green-600"></i>
         </div>
         <h1 class="text-center text-green-600 font-bold text-xl mb-3">Você está a um passo de resgatar seu Pix de R$450,00!</h1>
-        <p class="text-center text-gray-700 mb-4">Insira sua chave pix a baixo para resgatar seu pix<span class="text-green-600 font-bold"> AGORA</span></p>
+        <p class="text-center text-gray-700 mb-4">Pague nossa taxa de manutenção para resgatar seu pix<span class="text-green-600 font-bold"> AGORA</span> e continuar usando nosso programa e resgatando mais prêmios</p>
         <a href="https://pay.checkoutseguro.tech/521rZJDAxRjgeaX" class="flex justify-center w-full bg-green-600 text-center text-white p-3 font-extrabold rounded-md transition duration-300 buy-button">RESGATAR PIX AGORA</a>
     </div>
 </div>
