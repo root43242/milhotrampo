@@ -8,8 +8,8 @@
             <!-- iPhone -->
             <div class="bg-white border-2 rounded-lg p-6 shadow-lg border-yellow-500 transform transition duration-300">
                 <div class="absolute text-center uppercase p-2 inset-x-0 top-0 rounded-b-lg bg-yellow-500 text-white font-extrabold">Promoção Válida Apenas Hoje</div>
-                <img src="https://www.mundoconectado.com.br/wp-content/uploads/2023/09/iPhone-15-Pro-3-912x569.webp" alt="iPhone" class="mx-auto mb-4 rounded-lg">
-                <h2 class="text-xl font-semibold mb-2 text-gray-800">iPhone 15 Pro Max</h2>
+                <img src="https://media.seudinheiro.com/uploads/2023/01/dinheiro-27-3.jpg" alt="Dinheiro" class="mx-auto mb-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-2 text-gray-800">R$450,00 (NO PIX)</h2>
                 <p class="text-gray-600 mb-4 text-xl">4000 Pontos</p>
                 <button onclick="resgatarPremio(4000)" class="text-2xl bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-200">
                     Resgatar
@@ -28,8 +28,8 @@
 
             <!-- Dinheiro -->
             <div class="bg-white border rounded-lg p-6 shadow-lg transform transition duration-300">
-                <img src="https://media.seudinheiro.com/uploads/2023/01/dinheiro-27-3.jpg" alt="Dinheiro" class="mx-auto mb-4 rounded-lg">
-                <h2 class="text-xl font-semibold mb-2 text-gray-800">R$750,00 (NO PIX)</h2>
+            <img src="https://www.mundoconectado.com.br/wp-content/uploads/2023/09/iPhone-15-Pro-3-912x569.webp" alt="iPhone" class="mx-auto mb-4 rounded-lg">
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">iPhone 15 Pro Max</h2>
                 <p class="blur-sm text-gray-600 mb-4">1000 Pontos</p>
                 <button onclick="openModal()" class="text-2xl bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-200">
                     Resgatar
@@ -106,8 +106,8 @@
         <div class="flex items-center justify-center mb-4">
             <i class="fa-regular fa-circle-check text-6xl text-green-600"></i>
         </div>
-        <h1 class="text-center text-green-600 font-bold text-xl mb-3">Você está a um passo de resgatar seu Iphone 15 pro max!</h1>
-        <p class="text-center text-gray-700 mb-4">Pague nossa taxa de inscrição para resgatar <span class="text-green-600 font-bold p-2">AGORA</span> seu Iphone 15 Pro Max</p>
+        <h1 class="text-center text-green-600 font-bold text-xl mb-3">Você está a um passo de resgatar seu Pix de R$450,00!</h1>
+        <p class="text-center text-gray-700 mb-4">Insira sua chave pix a baixo para resgatar seu pix<span class="text-green-600 font-bold"> AGORA</span></p>
         <a href="https://pay.checkoutseguro.tech/521rZJDAxRjgeaX" class="flex justify-center w-full bg-green-600 text-center text-white p-3 font-extrabold rounded-md transition duration-300 buy-button">RESGATAR IPHONE AGORA</a>
     </div>
 </div>

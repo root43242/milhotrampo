@@ -36,9 +36,26 @@ function openModal03() {
     document.getElementById('03Mission').classList.remove('hidden');
 }
 
+
 function closeModal03() {
     document.getElementById('03Mission').classList.add('hidden');
 }
+
+function openModal04() {
+    adicionarPontos();
+    document.getElementById('04Mission').classList.remove('hidden');
+}
+
+
+function closeModal04() {
+    document.getElementById('04Mission').classList.add('hidden');
+}
+
+function openTaxa() {
+    document.getElementById('04Mission').classList.add('hidden');
+    document.getElementById('taxa').classList.remove('hidden');
+}
+
 
 // Exibir e fechar o modal de sucesso
 function showSuccessModal() {

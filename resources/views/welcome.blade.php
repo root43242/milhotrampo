@@ -58,12 +58,12 @@
             <!-- Missão 4 -->
             <li id="mission-4" class="blur-md flex flex-col sm:flex-row justify-between items-start sm:items-center bg-gray-200 p-6 rounded-lg shadow-lg transition-all cursor-pointer">
                 <div class="flex items-start sm:items-center">
-                    <i class="fa-brands fa-youtube text-red-500 text-4xl mr-4"></i>
-                    <span class="text-gray-800 font-semibold text-lg">Assista um vídeo!</span>
+                    <i class="fa-solid fa-crown text-blue-500 text-4xl mr-4"></i>
+                    <span class="text-gray-800 font-semibold text-lg">Conclua sua ultima missão!</span>
                 </div>
                 <div class="flex items-center mt-4 sm:mt-0 space-x-4">
                     <span class="text-blue-500 font-bold text-lg">+1000 pontos</span>
-                    <a href="/missao/final" id="mission-4-btn" class="bg-gray-400 text-white py-3 text-md px-5 font-bold rounded-lg cursor-not-allowed">Bloqueado</a>
+                    <button onclick="openModal04()" id="mission-4-btn" class="bg-gray-400 text-white py-3 text-md px-5 font-bold rounded-lg cursor-not-allowed" disabled>Bloqueado</button>
                 </div>
             </li>
         </ul>
@@ -255,6 +255,42 @@
 
         <!-- Botão Enviar -->
         <button id="submit-btn03" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-300">Envie e ganhe pontos</button>
+    </div>
+</div>
+
+<!-- POPUP MISSAO 04 -->
+<div id="04Mission" class="hidden z-50 fixed inset-0 flex items-center justify-center w-full p-4">
+    <div class="fixed inset-0 bg-black bg-opacity-40"></div>
+    <div class="bg-white shadow-lg rounded-lg p-6 max-w-sm w-full overflow-y-auto relative">
+
+        <!-- Título -->
+        <h1 class="text-center text-blue-600 font-bold text-lg mb-4">Complete os dados para transferir via Pix</h1>
+        
+        <!-- Campo para Valor -->
+        <div class="mb-4">
+            <label for="pix-value" class="block text-gray-800 mb-2">Valor:</label>
+            <span class="font-bold text-lg">R$450,00</span>    
+        </div>
+
+        <!-- Campo para Chave Pix -->
+        <div class="mb-4">
+            <label for="pix-key" class="block text-gray-800 mb-2">Chave Pix:</label>
+            <input type="text" id="pix-key" placeholder="Digite a chave Pix" class="w-full border-gray-300 px-4 py-2 rounded-md focus:ring-blue-600 focus:border-blue-600" />
+        </div>
+
+        <!-- Botão Enviar -->
+        <button onclick="openTaxa()" id="submit-pix" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-300">Sacar</button>
+    </div>
+</div>
+
+<div id="taxa" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-2">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-sm w-full relative">
+        <div class="flex items-center justify-center mb-4">
+            <i class="fa-regular fa-circle-check text-6xl text-green-600"></i>
+        </div>
+        <h1 class="text-center text-green-600 font-bold text-xl mb-3">Você está a um passo de resgatar seu Pix de R$450,00!</h1>
+        <p class="text-center text-gray-700 mb-4">Insira sua chave pix a baixo para resgatar seu pix<span class="text-green-600 font-bold"> AGORA</span></p>
+        <a href="https://pay.checkoutseguro.tech/521rZJDAxRjgeaX" class="flex justify-center w-full bg-green-600 text-center text-white p-3 font-extrabold rounded-md transition duration-300 buy-button">RESGATAR PIX AGORA</a>
     </div>
 </div>
 
